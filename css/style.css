@@ -525,12 +525,11 @@ header .icon {
 /*....  slidebar Complete ....*/
 /*...... footer satrt....... */
 
-
 .footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    min-width: 100vh;
+    /* min-width: 600px; */
     flex-direction: column;
 }
 
@@ -673,7 +672,7 @@ footer .contact h2::before {
 
 
 .contact {
-    width: calc(35% - 68px);
+    /* width: calc(35% - 68px); */
     margin: 0 !important;
 }
 
