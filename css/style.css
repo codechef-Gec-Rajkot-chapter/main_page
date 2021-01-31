@@ -525,14 +525,8 @@ header .icon {
 /*....  slidebar Complete ....*/
 /*...... footer satrt....... */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
-body {
+.footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
