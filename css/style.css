@@ -724,6 +724,10 @@ footer .contact h2::before {
     display: inline-grid;
 }
 
+.copyrightText p a{
+color:#fff;
+}
+
 
 @media (max-width: 991px) {
 
