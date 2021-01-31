@@ -1,967 +1,243 @@
-/* 
-Theme Name: Codechef Site 
-Version: 0.0.1
-Description: 
-Tag:
-Author: Prince Makavana
-Author URI:
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-div pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-figure,
-header,
-nav,
-section,
-article,
-aside,
-footer,
-figcaption {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-}
-
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-:root {
-    --white: white;
-    --light: #c2c2c2;
-    --dark: #434242;
-    --info: #17a2b8;
-    --danger: #dc3545;
-    --gray: #767575;
-    --dark-gray: #434242;
-    --warning: #f7ae27;
-    --navbar: #000000;
-    --navbar-bg: #7c7373;
-    --font-family: 'Poppins', sans-serif;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-family-helvatica: Helvetica, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    /* Font Sizes */
-    --font-normal: 18px;
-    --font-small: 14px;
-    --font-large: 20px;
-    --font-extra-large: 25px;
-    /* Header */
-    --header-bg: rgb(122, 106, 212);
-    --header-hight: 50px;
-    /* Footer */
-    --footer-bg: #e0e0e0;
-    --footer-hight: 100px;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fff;
-    min-height: 200vh;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-ul li {
-    display: inline-block;
-}
-
-/*......  Loader Start.....*/
-
-/* ..... Loader End.....*/
-/* ......Header Start ....*/
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100000;
-    background-image: linear-gradient(to right, #0622e0db, #005ffb, #0086ffed, #00a6f78f, #00c2eb);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.5s ease;
-    padding: 10px 20px;
-}
-
-.header .logo {
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 2em;
-    transition: all 0.5s ease;
-}
-
-header ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li {
-    position: relative;
-    list-style: none;
-    padding: 10px;
-    margin: 10px;
-    transition: all 0.5s ease;
-    background-color: #fff;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 12px 2.5px #000;
-    -moz-box-shadow: 0px 0px 12px 2.5px #000;
-    box-shadow: 0px 0px 10px -2.5px #000;
-}
-
-header ul li:hover {
-    -webkit-box-shadow: 0px 0px 12px 2.5px #fff;
-    -moz-box-shadow: 0px 0px 12px 2.5px #fff;
-    box-shadow: 0px 0px 10px -2.5px #fff;
-    background-color: #fff;
-}
-
-header ul li a {
-    position: relative;
-    margin: 0 15px;
-    color: #000;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: all 0.5s ease;
-}
-
-header.stick {
-    padding: 5px 20px;
-}
-
-.stick ul li a {
-    color: #000;
-}
-
-.stick ul li {
-    background-color: #fff;
-}
-
-.stick {
-    -webkit-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
-    /* position: fixed; */
-}
-
-header .icon {
-    display: none;
-}
-
-/*.... Header Over.....*/
-/* .... Banner Start ....*/
-.banner {
-    width: 100%;
-    height: 100vh;
-    padding-top: 78px;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    background-color: #2196F3;
-    padding: 10px;
-    background-image: linear-gradient(to right, #0622e0, #005ffb, #0086ff, #00a6f7, #00c2eb);
-}
-
-.banner img {
-    width: 75%;
-    margin: auto;
-    padding-top: 78px;
-    /* margin-right: 20px; */
-    /* margin-left: 50px; */
-    /* padding-left: 35px; */
-}
-
-.head {
-    font-size: 60px;
-    font-weight: 700;
-    color: #f4f1e2;
-}
-
-.banner-content {
-    padding-top: 78px;
-    margin: auto 10px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-}
-
-.banner-content * {
-    margin: 1%;
-}
-
-.banner-content p {
-    padding: 0px 30px 20px 30px;
-    color: #f4f1e2;
-    text-align: center;
-    margin: 10px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.join {
-    cursor: pointer;
-    border: 0;
-    font-weight: bold;
-    border-radius: 25px;
-    padding: 15px 26px;
-    background: #262626;
-    color: white;
-    font-size: 20px;
-    -webkit-box-shadow: 0px 0px 55px 0px rgb(0 0 0 / 75%);
-    -moz-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 22px 0px rgb(0 0 0 / 75%);
-    transition: all 0.5s ease;
-}
-
-.join:hover {
-    color: #000;
-    background-color: rgb(218, 214, 214);
-    -webkit-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
-
-}
-
-/*..... Banner Over .....*/
-
-/* .... Vision Start ....*/
-.vision {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
-    margin: auto;
-    /* padding: 60px 150px; */
-}
-
-.vision-img {
-    width: 65%;
-    margin: auto;
-}
-
-.vision-content {
-    /* margin: auto; */
-    margin: auto 30px;
-
-
-}
-
-
-.vision-content p {
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    line-height: 175%;
-
-}
-
-.vision-head {
-    color: #132678;
-    font-size: 50px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-
-
-/*.... Slider Bar .....*/
-
-
-.sidebar-section {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-
-}
-
-.slider {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.slider .card {
-    width: 70%;
-    border-radius: 10px;
-    border: rgb(170, 169, 169) 1px solid;
-    margin: auto;
-}
-
-.slider .card .img {
-    width: 100%;
-    flex: 1;
-}
-
-.slider .card .img img {
-    height: 100%;
-    width: 68%;
-    padding: 25px 24px 24px 24px;
-    margin: 10px auto;
-}
-
-
-.card .content .title {
-    font-size: 25px;
-    font-family: tahoma;
-    text-align: center;
-    padding: 10px 20px;
-
-}
-
-.card .content .sub-title {
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 25px;
-    font-family: tahoma;
-    color: #2441e4;
-    line-height: 20px;
-}
-
-
-
-.card .content .btn {
-    display: block;
-    text-align: center;
-    background-color: #0086ff;
-    width: 100%;
-    border-bottom-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.card .content .btn button {
-    background: transparent;
-    margin: auto;
-    color: #fff;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    padding: 5px 8px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.card .content .btn button:hover {
-    transform: scale(0.9);
-}
-
-
-.owl-carousel .owl-dots {
-    text-align: center;
-    align-self: center;
-}
-
-.owl-carousel button.owl-dot span {
-    border-radius: 50%;
-    background-color: #000;
-    width: 5px;
-    height: 5px;
-    display: inline-block;
-    margin: 0px 5px;
-}
-
-.owl-carousel button.active span {
-    width: 8px;
-    margin-top: 20px;
-    height: 8px;
-    padding-top: 1.5px;
-}
-
-.owl-carousel {
-    position: relative;
-}
-
-.owl-carousel .owl-nav button.owl-next span {
-    top: 32%;
-    border-radius: 50%;
-    font-size: 36px;
-    color: #000;
-    right: -80px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    display: inline-block;
-    background-color: rgba(250, 250, 250, 0.15);
-    position: absolute;
-}
-
-.owl-carousel .owl-nav button.owl-prev span {
-    top: 32%;
-    border-radius: 50%;
-    font-size: 36px;
-    color: #000;
-    left: -80px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    display: inline-block;
-    background-color: rgba(250, 250, 250, 0.15);
-    position: absolute;
-}
-
-
-@media screen and (max-width: 1320px) {
-    .owl-carousel .owl-nav {
-        display: none !important;
-    }
-}
-
-/* ..... mission ......*/
-
-.mission {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
-    margin: auto;
-    /* padding: 60px 150px; */
-}
-
-.mission-content {
-    /* margin: 40px 30px; */
-    margin: auto 30px;
-
-}
-
-.mission-content p {
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    line-height: 175%;
-
-}
-
-.mission-head {
-    color: #132678;
-    font-size: 50px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.mission h1 {
-    /* padding: 15px 0px; */
-}
-
-.mission-img {
-    width: 60%;
-    /* margin-left: 100px; */
-    margin: auto;
-}
-
-/*....mission over ....*/
-
-
-/*....  slidebar Complete ....*/
-/*...... footer satrt....... */
-
-.footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    /* min-width: 600px; */
-    flex-direction: column;
-}
-
-footer {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 50px 100px;
-    background: #111;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-footer .container .sec {
-    margin-right: 30px;
-}
-
-footer .container .sec.aboutus {
-    width: 40%;
-}
-
-footer .container .sec.aboutus h2 {
-    position: relative;
-    color: #fff;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-footer .aboutus h2::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: #0086ff;
-
-}
-
-footer p {
-    color: #999;
-    align-self: center;
-}
-
-.sei {
-    margin-top: 20px;
-    display: flex;
-}
-
-.sei li {
-    list-style: none;
-}
-
-.sei li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #222;
-    display: flex;
-    justify-content: center;
-    margin-right: 10px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.5s ease;
-}
-
-.sei li a:hover {
-    background-color: #0086ff;
-}
-
-.fa {
-    color: #fff;
-    font-size: 30px !important;
-    margin-top: 5px;
-}
-
-footer .quickLinks h2::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: #0086ff;
-
-}
-
-footer .quickLinks h2 {
-    position: relative;
-    color: #fff;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.quickLinks {
-    position: relative;
-    width: 25%;
-}
-
-.quickLinks ul li {
-    list-style: none;
-}
-
-.quickLinks ul li a {
-    color: #999;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.quickLinks ul li a:hover {
-    color: #fff;
-
-}
-
-footer .contact h2 {
-    position: relative;
-    color: #fff;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-footer .contact h2::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: #0086ff;
-
-}
-
-
-.contact {
-    margin: 0 !important;
-}
-
-.contact .info {
-    position: relative;
-}
-
-.contact .info li {
-    display: flex;
-    margin-bottom: 16px;
-}
-
-.contact .info li span:nth-child(1) {
-    color: #fff;
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.contact .info li span {
-    color: #999;
-
-}
-
-.contact .info li a {
-    color: #999;
-    text-decoration: none;
-
-}
-
-.contact .info li a:hover {
-    color: #fff;
-}
-
-.copyrightText {
-    width: 100%;
-    background: #181818;
-    padding: 8px 100px;
-    text-align: center;
-    color: #999;
-}
-
-.quickLinks ul {
-    display: inline-grid;
-}
-
-
-@media (max-width: 991px) {
-
-    footer {
-        padding: 40px;
-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> 
+        -->
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <a href="" class="logo">GEC-Rajkot Chapter</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul class="menu" id="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Mision</a></li>
+            <li><a href="">Vision</a></li>
+        </ul>
+
+    </header>
+    <section class="banner">
+        <img src="image/logo.png" class="banner-img" alt="" width="500px">
+
+        <div class="banner-content">
+            <a href="" class="head">GEC-Rajkot Chapter</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <a href="" class="join">Register Now <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <section class="vision">
+        <img src="image/Vision.jpg" class="vision-img" alt="">
+
+        <div class="vision-content">
+            <h1><a href="" class="vision-head">Vision</a></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim dolores
+                quasi quisquam veritatis voluptatem quas, debitis asperiores praesentium
+                a reiciendis ab, ipsum placeat! Fugiat deleniti repellendus voluptatem
+                debitis quos!. </p>
+        </div>
+    </section>
+    <section class="sidebar-section">
+        <div class="slider owl-carousel">
+            <div class="card">
+                <div class="img"><img src="image/harsh_Rathod.png" alt=""></div>
+                <div class="content">
+                    <div class="title"> Haresh Rathod</div>
+                    <div class="sub-title">Faclty advisor</div>
+                    <div class="btn">
+                        <button><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-github" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="image/Jeet_Patel.png" alt=""></div>
+                <div class="content">
+                    <div class="title">Jeet Patel</div>
+                    <div class="sub-title">President</div>
+                    <div class="btn">
+                        <button><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-github" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="image/Harshil_kaneriya.png" alt=""></div>
+                <div class="content">
+                    <div class="title">Harshil Kaneriya </div>
+                    <div class="sub-title">Event Lead</div>
+                    <div class="btn">
+                        <button><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-github" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="image/Mahima_Desani.png" alt=""></div>
+                <div class="content">
+                    <div class="title">Mahima Desani</div>
+                    <div class="sub-title">Social Media Lead</div>
+                    <div class="btn">
+                        <button><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-github" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="image/Prince_makavana.png" alt=""></div>
+                <div class="content">
+                    <div class="title">Prince Makavana</div>
+                    <div class="sub-title">CP Lead</div>
+                    <div class="btn">
+                        <button><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-github" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                        <button><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission">
+        
+        <div class="mission-content">
+            <h1><a href="" class="mission-head">Mission</a></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim dolores
+                quasi quisquam veritatis voluptatem quas, debitis asperiores praesentium
+                a reiciendis ab, ipsum placeat! Fugiat deleniti repellendus voluptatem
+                debitis quos!. </p>
+            </div>
+            <img src="image/mission.png" class="mission-img" alt="">
+    </section>
+
+    <div class="footer">
+        <footer>
+            <div class="container">
+                <div class="sec aboutus">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sapiente repudiandae minima nam quia nemo consectetur
+                        modi inventore culpa! Molestias voluptate ipsam distinctio
+                        tempora porro ipsa commodi cumque ipsum ducimus consectetur.
+                    </p>
+                    <ul class="sei">
+                        <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec quickLinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="">Codechef</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Contect</a></li>
+                        <li><a href="">Contest</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Register</a></li>
+                    </ul>
+                </div>
+                <div class="sec contact">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span>647 Linda Street <br> Phonixville , PA 12345, <br> USA</span>
+                        </li>
+
+                        <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <p><a href="tel:+91 9510825809">+91 9510825809</a><br><a href="tel:+91 9510825809">+91
+                                    9510825809</a></p>
+                        </li>
+
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto:princemakavana61@gmial.com">princemakavana61@gmial.com</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="copyrightText">
+        <p>Copyright © 2020 Goverment Enginnering Collage - Rajkot. All Rights Reserved </p>
+
+    </div>
+</body>
+<script>
+
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("stick", window.scrollY > 0);
+    })
+
+    function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.className === "menu") {
+            x.className += " responsive";
+        } else {
+            x.className = "menu";
+        }
     }
 
-    footer .container {
-        flex-direction: column;
-    }
+    $(".slider").owlCarousel({
+        margin: 10,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            1: {
+                items: 1, nav: false
+            },
+            800: {
+                items: 2, nav: false
+            },
+            1000: {
+                items: 3, nav: false
+            }
+        }
+    });
 
-    footer .container .sec {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
+</script>
 
-    footer .container .sec.aboutus {
-        width: 100%;
-    }
-
-    footer .container h2,
-    footer .quickLinks h2,
-    footer .contact h2 {
-        width: 100%;
-
-    }
-
-    .copyrightText {
-        padding: 8px 40px;
-    }
-}
-
-
-/*.....footer Complete ....*/
-
-/* ..... keyframe....... */
-
-
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: rotateX(-20deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-}
-
-body {
-    animation: transitionIn 0.75s;
-}
-
-@keyframes MenuIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.menu {
-    animation: MenuIn 0.75s;
-}
-
-@keyframes VisionImgIn {
-    from {
-        opacity: 0;
-        margin-left: -500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 116px;
-    }
-}
-
-.vision-img {
-    animation: VisionImgIn 0.75s;
-}
-
-@keyframes BannerIn {
-    from {
-        opacity: 0;
-        margin-left: -500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 66px;
-    }
-}
-
-.banner-img {
-    animation: BannerIn 0.75s;
-}
-
-@keyframes BannerContantIn {
-    from {
-        opacity: 0;
-        margin-left: 500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 0px;
-    }
-}
-
-.banner-content {
-    animation: BannerContantIn 0.75s;
-}
-
-@keyframes ImgOut {
-    from {
-        opacity: 0;
-        margin-left: -500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 132px;
-    }
-}
-
-.mission-img {
-    animation: ImgOut 0.75s;
-}
-
-/* .....KeyFrame Over..... */
-
-/* ..... Responsive .....  */
-@media screen and (max-width: 775px) {
-
-    header ul,
-    .menu,
-    .logo {
-        display: none;
-    }
-
-    header .icon {
-        display: block;
-        transition: all 0.5s;
-        color: #fff;
-    }
-
-    .responsive {
-        position: absolute;
-        display: grid;
-        margin-top: 200px;
-    }
-
-    .responsive li {
-        float: right;
-        text-align: left;
-    }
-
-    .banner {
-        grid-template-columns: 1fr;
-        padding-top: 30px;
-    }
-
-    .banner-content {
-        padding: 5px;
-        margin-top: 0 !important;
-        margin-bottom: 20px;
-
-    }
-
-    .banner-img {
-        width: 60% !important;
-        padding: 10px !important;
-        padding-top: 28px !important;
-        margin: 10px !important;
-        margin: auto !important;
-    }
-
-    .head {
-        font-weight: 400;
-    }
-
-    .banner-content p {
-        margin: 3%;
-    }
-
-    .vision {
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-
-    .vision-img {
-        width: 300px;
-        margin: auto;
-    }
-
-    .vision-content h1 {
-        text-align: center;
-        font-weight: 400;
-    }
-
-
-    .mission {
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-
-    .mission-img {
-        width: 300px;
-
-        margin: auto;
-        margin-bottom: 50px;
-    }
-
-    .mission-content h1 {
-        text-align: center;
-        font-weight: 400;
-    }
-
-    .mission-content,
-    .vision-content {
-        padding: 30px;
-    }
-
-    .contact .info {
-        width: fit-content;
-    }
-
-    .quickLinks ul {
-        display: inline-grid;
-    }
-
-    .contact h2 {
-        width: max-content !important;
-
-    }
-
-}
+</html>
