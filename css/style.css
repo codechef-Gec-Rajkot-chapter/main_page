@@ -101,10 +101,6 @@ figcaption {
     /* Footer */
     --footer-bg: #e0e0e0;
     --footer-hight: 100px;
-    /* Sidebar */
-    --sidebar-width: 210px;
-    --sidebar-bg: white;
-    --sidebar: #000000;
 }
 
 *,
@@ -144,7 +140,7 @@ ul li {
 /*......  Loader Start.....*/
 
 /* ..... Loader End.....*/
-
+/* ......Header Start ....*/
 
 header {
     position: fixed;
@@ -152,7 +148,6 @@ header {
     left: 0;
     width: 100%;
     z-index: 100000;
-    /*     background-color:#005ffb80; */
     background-image: linear-gradient(to right, #0622e0db, #005ffb, #0086ffed, #00a6f78f, #00c2eb);
     display: flex;
     justify-content: space-between;
@@ -163,7 +158,6 @@ header {
 
 .header .logo {
     position: relative;
-    /*     font-family: 'Courier New', Courier, monospace; */
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -231,23 +225,26 @@ header .icon {
     display: none;
 }
 
-
+/*.... Header Over.....*/
+/* .... Banner Start ....*/
 .banner {
     width: 100%;
+    height: 100vh;
     padding-top: 78px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     background-color: #2196F3;
     padding: 10px;
     background-image: linear-gradient(to right, #0622e0, #005ffb, #0086ff, #00a6f7, #00c2eb);
 }
 
 .banner img {
-    width: 400px;
+    width: 75%;
+    margin: auto;
     padding-top: 78px;
-    margin-right: 20px;
-    margin-left: 50px;
-    padding-left: 35px;
+    /* margin-right: 20px; */
+    /* margin-left: 50px; */
+    /* padding-left: 35px; */
 }
 
 .head {
@@ -258,7 +255,7 @@ header .icon {
 
 .banner-content {
     padding-top: 78px;
-    margin: 120px 0px 0px 0px;
+    margin: auto 10px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
@@ -271,7 +268,7 @@ header .icon {
     padding: 0px 30px 20px 30px;
     color: #f4f1e2;
     text-align: center;
-    margin: auto;
+    margin: 10px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -279,16 +276,15 @@ header .icon {
     cursor: pointer;
     border: 0;
     font-weight: bold;
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-radius: 25px;
+    padding: 15px 26px;
     background: #262626;
     color: white;
     font-size: 20px;
-    -webkit-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 55px 0px rgb(0 0 0 / 75%);
     -moz-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 22px 0px rgb(0 0 0 / 75%);
     transition: all 0.5s ease;
-
 }
 
 .join:hover {
@@ -300,25 +296,37 @@ header .icon {
 
 }
 
+/*..... Banner Over .....*/
 
+/* .... Vision Start ....*/
 .vision {
     width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
-    padding: 60px 150px;
+    margin: auto;
+    /* padding: 60px 150px; */
+}
+
+.vision-img {
+    width: 65%;
+    margin: auto;
 }
 
 .vision-content {
-    margin: 40px 30px;
+    /* margin: auto; */
+    margin: auto 30px;
+
 
 }
 
+
 .vision-content p {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    line-height: 150%;
+    font-weight: 600;
+    line-height: 175%;
 
 }
 
@@ -328,13 +336,7 @@ header .icon {
     font-family: 'Quicksand', sans-serif;
 }
 
-.vision h1 {
-    padding: 15px 0px;
-}
 
-.vision-img {
-    width: 399px;
-}
 
 /*.... Slider Bar .....*/
 
@@ -485,22 +487,25 @@ header .icon {
 
 .mission {
     width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
-    padding: 60px 150px;
+    margin: auto;
+    /* padding: 60px 150px; */
 }
 
 .mission-content {
-    margin: 40px 30px;
+    /* margin: 40px 30px; */
+    margin: auto 30px;
 
 }
 
 .mission-content p {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    line-height: 150%;
+    font-weight: 600;
+    line-height: 175%;
 
 }
 
@@ -511,12 +516,13 @@ header .icon {
 }
 
 .mission h1 {
-    padding: 15px 0px;
+    /* padding: 15px 0px; */
 }
 
 .mission-img {
-    width: 399px;
-    margin-left: 100px;
+    width: 60%;
+    /* margin-left: 100px; */
+    margin: auto;
 }
 
 /*....mission over ....*/
@@ -579,6 +585,7 @@ footer .aboutus h2::before {
 
 footer p {
     color: #999;
+    align-self: center;
 }
 
 .sei {
@@ -609,8 +616,8 @@ footer p {
 
 .fa {
     color: #fff;
-    font-size: 20px;
-    margin-top: 9px;
+    font-size: 30px !important;
+    margin-top: 5px;
 }
 
 footer .quickLinks h2::before {
@@ -672,7 +679,6 @@ footer .contact h2::before {
 
 
 .contact {
-    /* width: calc(35% - 68px); */
     margin: 0 !important;
 }
 
@@ -754,8 +760,107 @@ footer .contact h2::before {
 
 /*.....footer Complete ....*/
 
+/* ..... keyframe....... */
 
-@media screen and (max-width: 600px) {
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-20deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+body {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes MenuIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu {
+    animation: MenuIn 0.75s;
+}
+
+@keyframes VisionImgIn {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 116px;
+    }
+}
+
+.vision-img {
+    animation: VisionImgIn 0.75s;
+}
+
+@keyframes BannerIn {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 66px;
+    }
+}
+
+.banner-img {
+    animation: BannerIn 0.75s;
+}
+
+@keyframes BannerContantIn {
+    from {
+        opacity: 0;
+        margin-left: 500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+.banner-content {
+    animation: BannerContantIn 0.75s;
+}
+
+@keyframes ImgOut {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 132px;
+    }
+}
+
+.mission-img {
+    animation: ImgOut 0.75s;
+}
+
+/* .....KeyFrame Over..... */
+
+/* ..... Responsive .....  */
+@media screen and (max-width: 775px) {
 
     header ul,
     .menu,
@@ -782,6 +887,7 @@ footer .contact h2::before {
 
     .banner {
         grid-template-columns: 1fr;
+        padding-top: 30px;
     }
 
     .banner-content {
@@ -792,7 +898,7 @@ footer .contact h2::before {
     }
 
     .banner-img {
-        width: 300px !important;
+        width: 60% !important;
         padding: 10px !important;
         padding-top: 28px !important;
         margin: 10px !important;
@@ -845,7 +951,6 @@ footer .contact h2::before {
         padding: 30px;
     }
 
-
     .contact .info {
         width: fit-content;
     }
@@ -859,128 +964,4 @@ footer .contact h2::before {
 
     }
 
-
-
-}
-
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: rotateX(-20deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-
-
-
-}
-
-body {
-    animation: transitionIn 0.75s;
-}
-
-
-@keyframes MenuIn {
-    from {
-        opacity: 0;
-        /* transform: rotateY(-20deg); */
-    }
-
-    to {
-        opacity: 1;
-        /* transform: rotateY(0); */
-    }
-}
-
-
-.menu {
-    animation: MenuIn 0.75s;
-}
-
-
-
-
-
-@keyframes ImgIn {
-    from {
-        opacity: 0;
-        margin-left: -500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 0;
-    }
-
-
-
-}
-
-.vision-img {
-    animation: ImgIn 0.75s;
-}
-
-
-@keyframes BannerIn {
-    from {
-        opacity: 0;
-        margin-left: -500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 50px;
-    }
-
-
-
-}
-
-.banner-img {
-    animation: BannerIn 0.75s;
-}
-
-@keyframes BannerContantIn {
-    from {
-        opacity: 0;
-        margin-left: 500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 0px;
-    }
-
-
-
-}
-
-.banner-content {
-    animation: BannerContantIn 0.75s;
-}
-
-
-
-
-
-@keyframes ImgOut {
-    from {
-        opacity: 0;
-        margin-left: -500px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 100px;
-    }
-
-
-
-}
-
-.mission-img {
-    animation: ImgOut 0.75s;
 }
