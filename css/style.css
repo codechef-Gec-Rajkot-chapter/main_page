@@ -357,7 +357,7 @@ header .icon {
 .slider .card {
     width: 70%;
     border-radius: 10px;
-    border: rgb(170, 169, 169) 1px solid;
+    border: rgba(173, 173, 173, 0.637) 1px solid;
     margin: auto;
 }
 
@@ -640,7 +640,7 @@ footer .quickLinks h2 {
 
 .quickLinks {
     position: relative;
-    width: 25%;
+    /* width: 25%; */
 }
 
 .quickLinks ul li {
