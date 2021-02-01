@@ -348,17 +348,34 @@ header .icon {
 
 
 }
+.sidebar-section h1 {
+    margin: 5% auto;
+    /* font-size: xx-large; */
+    width: 100%;
+    text-align: center;
+    color: #132678;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
 
 .slider {
     max-width: 1200px;
-    margin: auto;
+    margin:  auto ;
 }
 
 .slider .card {
     width: 70%;
     border-radius: 10px;
     border: rgba(173, 173, 173, 0.637) 1px solid;
-    margin: auto;
+    margin: 5% auto;
+    transition: all 0.5s ease;
+}
+
+.slider .card:hover{
+    width: 71%;
+    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
+
+
 }
 
 .slider .card .img {
@@ -558,10 +575,10 @@ footer .container {
 }
 
 footer .container .sec {
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 
-footer .container .sec.aboutus {
+footer .container .sec.aboutus , footer .container .sec.quickLinks ,  footer .container .sec.contact  {
     width: 40%;
 }
 
@@ -723,9 +740,8 @@ footer .contact h2::before {
 .quickLinks ul {
     display: inline-grid;
 }
-
-.copyrightText p a{
-color:#fff;
+.copyrightText p a {
+    color: #fff;
 }
 
 
@@ -967,5 +983,10 @@ body {
         width: max-content !important;
 
     }
+
+    
+footer .container .sec.aboutus , footer .container .sec.quickLinks ,  footer .container .sec.contact  {
+    width: 100%;
+}
 
 }
